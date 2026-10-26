@@ -3,6 +3,11 @@ const archiveCards = [...document.querySelectorAll('.archive-grid .photograph')]
 const filters = document.querySelector('.filters');
 const archiveCount = document.querySelector('.archive-count');
 filters.hidden = false;
+// The archive contains only work not already shown above.
+filters.querySelectorAll('[data-filter]').forEach(button => {
+  const category = button.dataset.filter;
+  button.hidden = category !== 'all' && !archiveCards.some(card => card.dataset.category === category);
+});
 filters.addEventListener('click', event => {
   const button = event.target.closest('[data-filter]');
   if (!button) return;
@@ -68,8 +73,8 @@ if (typeof dialog.showModal === 'function') {
     trigger = link;
     activeLinks = link.dataset.set === 'archive'
       ? archiveCards.filter(card => !card.hidden).map(card => card.querySelector('a'))
-      : [...document.querySelectorAll('[data-set="selection"]')];
-    // The cover photograph belongs to the selected collection too.
+      : [...document.querySelectorAll('[data-set="hero"], [data-set="selection"]')];
+    // Hero and selected photographs form one sequence without repeated files.
     activeIndex = activeLinks.findIndex(item => item.getAttribute('href') === link.getAttribute('href'));
     if (activeIndex < 0) activeIndex = 0;
     showPhoto();

@@ -10,14 +10,16 @@ The ready-to-upload files are also in `keith-godfrey-portfolio.zip` and the `kei
 
 ## What's included
 
-- A bold typographic cover with paired portrait and nature photographs.
-- A curated sequence of 16 images with a dark nature spread.
-- An expandable archive of all 34 supplied photographs, with category filters.
+- A bold typographic cover with paired jumping-frog and sunflower photographs.
+- 21 unique featured and selected photographs, with a dark nature spread.
+- An archive of 18 additional photographs, open by default, with category filters. Visitors can collapse it.
 - A fullscreen viewer with previous/next buttons, arrow keys, Escape, and mobile swipe support.
 - Reduced-motion support, native keyboard focus, descriptive image text, and lazy loading.
+- Keith’s illustrated studio logo and camera portrait in the Perspective section.
+- Each photograph appears once on the page; featured work is excluded from the archive.
 - Dallas location and direct email links to keith@kagodfrey.com.
 
-The native archive and direct image links work without JavaScript. The layout uses system sans-serif fonts, so exact letterforms can differ between operating systems. Original photo files are unchanged.
+The native archive and direct image links work without JavaScript. The layout uses system sans-serif fonts, so exact letterforms can differ between operating systems. Original photo files are unchanged. The selected blueberry image uses a separately saved AI-enhanced version, `webp/IMG_1343-enhanced.webp`; its original is `webp/IMG_1343.webp`. AI reconstruction adds fine surface detail rather than recovering original sensor data.
 
 ## Editing
 
@@ -28,3 +30,5 @@ The native archive and direct image links work without JavaScript. The layout us
 Selected photo links use `data-set="selection"`; archive links use `data-set="archive"`. Archive figures use `data-category="people"`, `"still-life"`, or `"nature"`. Keep the image width, height, and descriptive alt text when changing photos.
 
 The Open Graph image currently uses a relative photo path. Once the final public URL is known, change `og:image` to that photo’s absolute HTTPS URL and add `og:url`/canonical metadata for your domain.
+
+The archive blueberry-bowl photo also uses a separate AI-enhanced file, `webp/IMG_1342-enhanced.webp`; its original is preserved at `webp/IMG_1342.webp`.
