@@ -236,3 +236,6 @@ footer>a:last-child span { font-size: 18px; margin-left: 25px; }
 .studio-signature { width: 100%; max-width: 480px; height: auto; margin-top: 32px; }
 .photographer-portrait { width: 230px; height: auto; aspect-ratio: 1; border-radius: 50%; object-fit: cover; object-position: 50% 0%; margin-bottom: 28px; }
 @media(max-width:600px) { .studio-signature { max-width: 100%; margin-top: 25px; } .photographer-portrait { width: 180px; } }
+
+/* Descriptive titles and subject categories for the added photographs. */
+.photo-category { display: block; margin-top: 5px; font-size: 9px; letter-spacing: .7px; color: var(--muted); }

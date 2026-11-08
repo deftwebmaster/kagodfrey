@@ -1,0 +1,286 @@
+{
+  "canonical_origin": "https://kagodfrey.com/",
+  "legacy_aliases": "Old paths are byte-identical compatibility copies; all page and sitemap references use new paths.",
+  "images": [
+    {
+      "previous": "webp/37F8B653-BC5D-4A44-9ACF-D45B3B36898E.webp",
+      "current": "webp/keith-godfrey-jumping-frog-wet-stones.webp",
+      "sha256": "f5450f711fb96d559a03b953016216f5efcd604b4dc331f3fdeeeb6116deb466"
+    },
+    {
+      "previous": "webp/IMG_1368.webp",
+      "current": "webp/keith-godfrey-golden-sunflower-nature-study.webp",
+      "sha256": "f1ab50412a73f65b44533a78a20a0edac5b39b5918803a4867c2da2cd53b12ad"
+    },
+    {
+      "previous": "webp/IMG_1363.webp",
+      "current": "webp/keith-godfrey-acoustic-guitar-still-life.webp",
+      "sha256": "675651423eebbe44b321c66c5249095bdb4804517675658001415fd990de301d"
+    },
+    {
+      "previous": "webp/IMG_1357.webp",
+      "current": "webp/keith-godfrey-child-hands-black-white-portrait.webp",
+      "sha256": "8344af714a10dfc06d7df08a97e3e283ffae276cacc9ab11f57b14ce6f43ce44"
+    },
+    {
+      "previous": "webp/IMG_1372.webp",
+      "current": "webp/keith-godfrey-wrench-textured-metal-still-life.webp",
+      "sha256": "c24b6ff0f9fc1b41f7bedceba722224d9db4a419acefe1d70df3fe59821f74f5"
+    },
+    {
+      "previous": "webp/IMG_1367.webp",
+      "current": "webp/keith-godfrey-stone-textured-background.webp",
+      "sha256": "1c4b86638ebf8938cfec34661c3e6b5c55247f43b7996826bc21237246745c49"
+    },
+    {
+      "previous": "webp/69C1B588-2F40-4C0B-9B58-9C46B7BAF4A0.webp",
+      "current": "webp/keith-godfrey-rusty-nail-weathered-wood.webp",
+      "sha256": "aec19dd50df65d6634bd4f2074a9a78429cf89af600529cb8cab708fb4bd45f5"
+    },
+    {
+      "previous": "webp/IMG_1369.webp",
+      "current": "webp/keith-godfrey-woman-black-white-portrait.webp",
+      "sha256": "e1a3803c2a7f4e10446905d2f7c13ebe5eb4cdf45fba9aa8c43cb157fd0c85cc"
+    },
+    {
+      "previous": "webp/IMG_1343-enhanced.webp",
+      "current": "webp/keith-godfrey-blueberries-close-up-enhanced.webp",
+      "sha256": "6107c0abb478a04878e7c4ba7a13c0b8809be7a7ff6dd6ac6ef9f6648e2f5fb1"
+    },
+    {
+      "previous": "webp/IMG_1343.webp",
+      "current": "webp/keith-godfrey-blueberries-close-up-original.webp",
+      "sha256": "250f2f220500f4e4a0c9211ab049d8a621d33efa55e0f2fbf68053ab177934f6"
+    },
+    {
+      "previous": "webp/IMG_1360.webp",
+      "current": "webp/keith-godfrey-weimaraner-puppy-portrait.webp",
+      "sha256": "5fcfad92ffa2fd503257c049c5f0d70457cbf7df3f087b0f454531097cf70c99"
+    },
+    {
+      "previous": "webp/IMG_1341.webp",
+      "current": "webp/keith-godfrey-vintage-camera-detail.webp",
+      "sha256": "51f6dec4ef525174bd55be358d5dd35e624b8ee77a5a29f126dce9706948b18d"
+    },
+    {
+      "previous": "webp/IMG_1352.webp",
+      "current": "webp/keith-godfrey-bird-eye-close-up.webp",
+      "sha256": "57bb500173ad39639faab2993ea8842b5d116e1edeea7f356ba5b63583213174"
+    },
+    {
+      "previous": "webp/IMG_1366.webp",
+      "current": "webp/keith-godfrey-snake-black-background.webp",
+      "sha256": "0757d59c03e4ec11b126217c4ec1f06cc2a44571a3da3b729e414b029a31816f"
+    },
+    {
+      "previous": "webp/A856D623-86CC-487A-A4A2-11B1F2D92198_1_102_o.webp",
+      "current": "webp/keith-godfrey-spotted-dog-close-up-portrait.webp",
+      "sha256": "2366a1bd01423d48e8e4f62c7be1c085045ae4ae9a6f263520f35ad018967758"
+    },
+    {
+      "previous": "webp/A9013C37-D2E4-469E-9DE0-FD97A27552C6_1_102_o.webp",
+      "current": "webp/keith-godfrey-bird-taking-flight-branch.webp",
+      "sha256": "b3d7be3a96d8ff670ad352f37de7b65cc2248053eba4911f8b39ae2b111783ea"
+    },
+    {
+      "previous": "webp/DAC0133D-0E4E-42AF-8756-302FD04EECF4_1_102_o.webp",
+      "current": "webp/keith-godfrey-bird-of-prey-black-white-portrait.webp",
+      "sha256": "b0c891220d95990f91fd9db3a539e60c85078d4bd5dc498bb54cbbb2a7facc3f"
+    },
+    {
+      "previous": "webp/IMG_1356.webp",
+      "current": "webp/keith-godfrey-seated-portrait-hat-chair.webp",
+      "sha256": "5e2754d873e3bf3871603171ea71790eebec07f986a61ed20ad33159bc0cfada"
+    },
+    {
+      "previous": "webp/IMG_1355.webp",
+      "current": "webp/keith-godfrey-smiling-woman-hat-portrait.webp",
+      "sha256": "0a79fec332694248b7eba55d917788bfa6fd2a9a43c339a9c2703e29ce1a8128"
+    },
+    {
+      "previous": "webp/IMG_1359.webp",
+      "current": "webp/keith-godfrey-wooden-cross-fabric-still-life.webp",
+      "sha256": "11e4d65dfed5b251eb54110a865b734b5e6ddca7acdd1dda7524dbd3ffa8359e"
+    },
+    {
+      "previous": "webp/IMG_1364.webp",
+      "current": "webp/keith-godfrey-acoustic-guitar-headstock-detail.webp",
+      "sha256": "cc56bd00fe9a98dc278c312ed7141e1b5828b40ae50727ff0cf65c7e7931b025"
+    },
+    {
+      "previous": "webp/IMG_1346.webp",
+      "current": "webp/keith-godfrey-white-daisies-flower-photography.webp",
+      "sha256": "adc7959c70df0dae00bd7bae64f3fafc31062aff142faf13034339fbcbfbbf4b"
+    },
+    {
+      "previous": "webp/28E11009-174F-4DEA-B518-58CD06EB2391.webp",
+      "current": "webp/keith-godfrey-illustrated-photography-studio-logo.webp",
+      "sha256": "287f48b087c524795a6ddcf585d7f70447499b41732fafa3376a513ca630bf17"
+    },
+    {
+      "previous": "webp/277E61DE-E8A6-4FC8-8D17-614B6A5336E9.webp",
+      "current": "webp/keith-godfrey-dallas-photographer-camera-portrait.webp",
+      "sha256": "dad151bdcb9c99addce40a3d1367133663ee72e3158e2997059f9155b42b6713"
+    },
+    {
+      "previous": "webp/74C1E0A3-864A-49DF-A324-5C717DED29C3.webp",
+      "current": "webp/keith-godfrey-autumn-leaf-raindrops.webp",
+      "sha256": "2a1f42dd30c140e49413193fef704e74b3560385bfaa096fdfbe7677fd6026fc"
+    },
+    {
+      "previous": "webp/IMG_6730.webp",
+      "current": "webp/keith-godfrey-waterfall-rocky-pool-black-white.webp",
+      "sha256": "4fe132be4d87a1d9947948be2208f47bfc21df476b4434fc136b25a438c1e9ba"
+    },
+    {
+      "previous": "webp/IMG_0185.webp",
+      "current": "webp/keith-godfrey-praying-mantis-leaf-black-white.webp",
+      "sha256": "400d31fc47dd8ea46e5cad4ee9028d4dc719dd2a93c92d3643790a9eb0796029"
+    },
+    {
+      "previous": "webp/IMG_2405.webp",
+      "current": "webp/keith-godfrey-patterned-snake-rocks-gravel.webp",
+      "sha256": "97960ece86a5ef288df6a800f0b7602a49d0cb198e0d4ce4ee4c6a657b3bca6e"
+    },
+    {
+      "previous": "webp/IMG_4106.webp",
+      "current": "webp/keith-godfrey-dog-eyes-black-white-panorama.webp",
+      "sha256": "e9a7cea79263838614af059dfc64d4dcf6cf0da36c69e0e9f1559a1ad237df7a"
+    },
+    {
+      "previous": "webp/IMG_4116.webp",
+      "current": "webp/keith-godfrey-dog-rope-toy-black-white.webp",
+      "sha256": "dde0e5af8b6d6be62430cbfa59eeff89efc23ca339b87f378ced701df8d58ce0"
+    },
+    {
+      "previous": "webp/IMG_3271.webp",
+      "current": "webp/keith-godfrey-spotted-dog-window-portrait.webp",
+      "sha256": "8dd60dd1122c8ed42cfa03bf45fda30e93bad047e3aeb1bf676256ea967460f3"
+    },
+    {
+      "previous": "webp/IMG_3492.webp",
+      "current": "webp/keith-godfrey-cat-dark-face-black-white-portrait.webp",
+      "sha256": "b358e3060d988d08d28f3c6395e8ba832dee6b34a4b16a3d82c1ff2f4f9e7870"
+    },
+    {
+      "previous": "webp/IMG_1490.webp",
+      "current": "webp/keith-godfrey-children-matching-baseball-caps.webp",
+      "sha256": "02cd369765264bdb8a711e2bf14dfbf6b3ccfb18d8c82c5d0296da3eb2146ae9"
+    },
+    {
+      "previous": "webp/IMG_1491.webp",
+      "current": "webp/keith-godfrey-smiling-child-baseball-cap-portrait.webp",
+      "sha256": "af2623fa03f3935d1ae15ef2240cbdcb492bf3b8968f0be442d015ea4e008947"
+    },
+    {
+      "previous": "webp/IMG_1492.webp",
+      "current": "webp/keith-godfrey-child-round-glasses-cap-portrait.webp",
+      "sha256": "548edb2b087fce9ef5f9991f482c24219c67c16b86aa4c95bd8238efb2d3e636"
+    },
+    {
+      "previous": "webp/3D7E9884-1D7A-4548-8B6F-93197C3D8845.webp",
+      "current": "webp/keith-godfrey-bent-rusty-nail-wood-detail.webp",
+      "sha256": "7ed50a64d777f77593a21afb127bbe17947aa35a9b19758b0bb29f89d599e120"
+    },
+    {
+      "previous": "webp/IMG_1268.webp",
+      "current": "webp/keith-godfrey-worn-baseball-grass-black-white.webp",
+      "sha256": "a631060e0ab62f86fb0f7a8d4439fe05d7ee489b61f804358d5a2b06e7f10b58"
+    },
+    {
+      "previous": "webp/IMG_1337.webp",
+      "current": "webp/keith-godfrey-man-raised-fists-portrait.webp",
+      "sha256": "98697c6d794c3dc45088dca4419df4640bbba573dfd767d16bea26775b1f01e2"
+    },
+    {
+      "previous": "webp/IMG_1338.webp",
+      "current": "webp/keith-godfrey-child-soft-focus-portrait.webp",
+      "sha256": "2b2dec5ecad5ea4e7b62a5b54d3c6c8431b6ab42a2c4f5408226d0217ec28bc0"
+    },
+    {
+      "previous": "webp/IMG_1339.webp",
+      "current": "webp/keith-godfrey-child-watching-baseball-game.webp",
+      "sha256": "4208381a98d6593b5b4cadc632f8de4a8ab09a590136c1310ae0af30fa5f9dc3"
+    },
+    {
+      "previous": "webp/IMG_1340.webp",
+      "current": "webp/keith-godfrey-young-baseball-catcher.webp",
+      "sha256": "2a23fc61f54f76633fb624f887039f0259c6c06b407f24a343f844fcb30a0147"
+    },
+    {
+      "previous": "webp/IMG_1344.webp",
+      "current": "webp/keith-godfrey-people-gathered-table.webp",
+      "sha256": "99ba8ef5727ab41af120b28e3ae0395b7343c5a98c5ad937fd0fdca8adbdb99a"
+    },
+    {
+      "previous": "webp/IMG_1345.webp",
+      "current": "webp/keith-godfrey-children-baseball-caps-candid.webp",
+      "sha256": "5d4af073fbad1f2fed02c863abcfad8629cfc8314d7360d630516972a677ffb3"
+    },
+    {
+      "previous": "webp/IMG_1350.webp",
+      "current": "webp/keith-godfrey-doll-spider-still-life.webp",
+      "sha256": "91e97a3f91b57f906eaa49895ef177ead14f5c0e00b2c619fbf62c4387af447e"
+    },
+    {
+      "previous": "webp/IMG_1354.webp",
+      "current": "webp/keith-godfrey-child-gathering-candid-portrait.webp",
+      "sha256": "52aaeaeca7c19d7e9402b12da65b347e025606685aee4ccaab990a9891ad2eba"
+    },
+    {
+      "previous": "webp/IMG_1371.webp",
+      "current": "webp/keith-godfrey-child-baseball-cap-black-white.webp",
+      "sha256": "9e2204cfd18170dde49705a015eeb16da6a4851f352bb05a713a2bee68f6d083"
+    },
+    {
+      "previous": "webp/IMG_1336.webp",
+      "current": "webp/keith-godfrey-lace-table-detail.webp",
+      "sha256": "1bc7a672fd579f4282fce8eaab0a22d0fa17896a55ee32f452c27acd01f2e94a"
+    },
+    {
+      "previous": "webp/IMG_1342-enhanced.webp",
+      "current": "webp/keith-godfrey-blueberries-yellow-bowl-enhanced.webp",
+      "sha256": "e18dfefb3c70a20be38e9a3c69b42e713d44eb3beb0977022a9a08284c83c54b"
+    },
+    {
+      "previous": "webp/IMG_1342.webp",
+      "current": "webp/keith-godfrey-blueberries-yellow-bowl-original.webp",
+      "sha256": "ec0ae5010005971ce36ab17aa90fd691fff7455676c0376c9259fc4591382cd0"
+    },
+    {
+      "previous": "webp/IMG_1348.webp",
+      "current": "webp/keith-godfrey-small-figure-dark-stones.webp",
+      "sha256": "df0659830b48a7e340c6fc338d041651b107910122296b4e5e6686b7dc3b1c4a"
+    },
+    {
+      "previous": "webp/IMG_1351.webp",
+      "current": "webp/keith-godfrey-red-ornament-green-ribbon.webp",
+      "sha256": "40b3fe3f6286f493b8e61bf9c0ad5dbab47d4e9fa5f790a095702aaf93410036"
+    },
+    {
+      "previous": "webp/IMG_1358.webp",
+      "current": "webp/keith-godfrey-skeleton-top-hat-still-life.webp",
+      "sha256": "15539c855367eb71aaf6cf1995895b621680aae26aa272545cf954601a26f028"
+    },
+    {
+      "previous": "webp/IMG_1361.webp",
+      "current": "webp/keith-godfrey-dried-rose-dark-fabric.webp",
+      "sha256": "78b6fdcbc279d3bba1124e825a968ff9926945593bdd876e9ae09f6a0ebba930"
+    },
+    {
+      "previous": "webp/IMG_1362.webp",
+      "current": "webp/keith-godfrey-toy-soldiers-close-up.webp",
+      "sha256": "036830762c8df564e2a683e1e71af74486eafa8406ac213a96917d61bdac8839"
+    },
+    {
+      "previous": "webp/IMG_1370.webp",
+      "current": "webp/keith-godfrey-golf-ball-tee-close-up.webp",
+      "sha256": "1eceb7ddf6cdad8f4a60b2fad2be08e92766cea047b4d2c6392e3664cc18ab9c"
+    },
+    {
+      "previous": "webp/IMG_1349.webp",
+      "current": "webp/keith-godfrey-woman-black-hat-beads-portrait.webp",
+      "sha256": "b535af6526ec5fba9e455a481ecba24ed150e30427c25fd9e67c0aa2eb5dd28c"
+    }
+  ]
+}
