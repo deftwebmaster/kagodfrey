@@ -1,54 +1,65 @@
-// The archive is an enhancement of native <details>; every photo works without JS.
-const archiveCards = [...document.querySelectorAll('.archive-grid .photograph')];
-const filters = document.querySelector('.filters');
-const archiveCount = document.querySelector('.archive-count');
-filters.hidden = false;
-// The archive contains only work not already shown above.
-filters.querySelectorAll('[data-filter]').forEach(button => {
-  const category = button.dataset.filter;
-  button.hidden = category !== 'all' && !archiveCards.some(card => card.dataset.category === category);
-});
-filters.addEventListener('click', event => {
-  const button = event.target.closest('[data-filter]');
-  if (!button) return;
-  const category = button.dataset.filter;
-  archiveCards.forEach(card => {
-    card.hidden = category !== 'all' && card.dataset.category !== category;
-  });
-  filters.querySelectorAll('button').forEach(item => {
-    item.setAttribute('aria-pressed', String(item === button));
-  });
-  archiveCount.textContent = `${archiveCards.filter(card => !card.hidden).length} photographs`;
-});
 document.querySelector('#year').textContent = new Date().getFullYear();
 
-// Add a small entrance only when motion is welcome. Stop observing after reveal.
-const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
+// Justified rows use the supplied dimensions, so lazy-loaded photos reserve
+// their exact space. No cropping or image-load measurement is necessary.
+const gallery = document.querySelector('.gallery-grid');
+if (gallery) {
+  const cards = [...gallery.querySelectorAll('.photograph')];
+  const ratios = cards.map(card => {
+    const image = card.querySelector('img');
+    return Number(image.getAttribute('width')) / Number(image.getAttribute('height'));
+  });
+  let previousWidth = 0;
+  let layoutFrame = 0;
+  function layoutGallery() {
+    const width = gallery.clientWidth;
+    if (!width || width === previousWidth) return;
+    previousWidth = width;
+    const gap = parseFloat(getComputedStyle(gallery).columnGap) || 10;
+    const target = width < 600 ? width / 2.1 : width < 1000 ? 250 : 300;
+    let start = 0;
+    while (start < cards.length) {
+      let end = start;
+      let sum = 0;
+      // Choose the next row whose common height is closest to the target.
+      while (end < cards.length) {
+        sum += ratios[end++];
+        const height = (width - gap * (end - start - 1)) / sum;
+        if (height <= target) {
+          if (end - start > 1) {
+            const priorHeight = (width - gap * (end - start - 2)) / (sum - ratios[end - 1]);
+            if (Math.abs(priorHeight - target) < Math.abs(height - target)) {
+              sum -= ratios[--end];
+            }
+          }
+          break;
+        }
       }
-    });
-  }, { threshold: 0.06 });
-  document.querySelectorAll('.selection-grid .photograph').forEach(element => {
-    element.classList.add('reveal');
-    observer.observe(element);
-  });
-  reducedMotion.addEventListener('change', () => {
-    if (reducedMotion.matches) {
-      document.querySelectorAll('.reveal').forEach(element => element.classList.add('is-visible'));
-      observer.disconnect();
+      const available = width - gap * (end - start - 1);
+      const height = Math.min(available / sum, end === cards.length ? target : Infinity);
+      for (let i = start; i < end; i++) {
+        // Round down slightly to prevent fractional pixels wrapping the last item.
+        cards[i].style.width = `${Math.floor(height * ratios[i] * 100) / 100}px`;
+        cards[i].style.height = `${height}px`;
+        cards[i].querySelector('img').sizes = `${Math.ceil(height * ratios[i])}px`;
+      }
+      start = end;
     }
-  });
+    gallery.classList.add('rows-ready');
+  }
+  layoutGallery();
+  const scheduleLayout = () => {
+    cancelAnimationFrame(layoutFrame);
+    layoutFrame = requestAnimationFrame(layoutGallery);
+  };
+  if ('ResizeObserver' in window) new ResizeObserver(scheduleLayout).observe(gallery);
+  else window.addEventListener('resize', scheduleLayout);
 }
 
 const dialog = document.querySelector('.lightbox');
-const viewerImage = dialog.querySelector('.viewer-image');
-const viewerLabel = dialog.querySelector('.viewer-label');
-const viewerCounter = dialog.querySelector('.viewer-counter');
+const viewerImage = dialog?.querySelector('.viewer-image');
+const viewerLabel = dialog?.querySelector('.viewer-label');
+const viewerCounter = dialog?.querySelector('.viewer-counter');
 let activeLinks = [];
 let activeIndex = 0;
 let trigger = null;
@@ -65,16 +76,14 @@ function step(direction) {
   activeIndex = (activeIndex + direction + activeLinks.length) % activeLinks.length;
   showPhoto();
 }
-if (typeof dialog.showModal === 'function') {
+if (dialog && typeof dialog.showModal === 'function') {
   document.addEventListener('click', event => {
     const link = event.target.closest('[data-photo]');
     if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
     trigger = link;
-    activeLinks = link.dataset.set === 'archive'
-      ? archiveCards.filter(card => !card.hidden).map(card => card.querySelector('a'))
-      : [...document.querySelectorAll('[data-set="hero"], [data-set="selection"]')];
-    // Hero and selected photographs form one sequence without repeated files.
+    // One complete gallery sequence, even when opened from a featured image.
+    activeLinks = [...document.querySelectorAll('.gallery-grid [data-photo]')];
     activeIndex = activeLinks.findIndex(item => item.getAttribute('href') === link.getAttribute('href'));
     if (activeIndex < 0) activeIndex = 0;
     showPhoto();
