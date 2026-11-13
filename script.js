@@ -83,7 +83,7 @@ if (dialog && typeof dialog.showModal === 'function') {
     event.preventDefault();
     trigger = link;
     // One complete gallery sequence, even when opened from a featured image.
-    activeLinks = [...document.querySelectorAll('.gallery-grid [data-photo]')];
+    activeLinks = [...document.querySelectorAll('.gallery-grid [data-photo], .service-page [data-photo]')];
     activeIndex = activeLinks.findIndex(item => item.getAttribute('href') === link.getAttribute('href'));
     if (activeIndex < 0) activeIndex = 0;
     showPhoto();
@@ -122,3 +122,16 @@ if (dialog && typeof dialog.showModal === 'function') {
     viewerImage.removeAttribute('src');
   });
 }
+
+// Native Services menus remain usable without JS; add outside-click and Escape dismissal.
+const serviceMenus = [...document.querySelectorAll('.services-menu')];
+document.addEventListener('click', event => {
+  serviceMenus.forEach(menu => { if (!menu.contains(event.target)) menu.open = false; });
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    serviceMenus.forEach(menu => {
+      if (menu.open) { menu.open = false; menu.querySelector('summary').focus(); }
+    });
+  }
+});

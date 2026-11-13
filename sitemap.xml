@@ -174,4 +174,36 @@
     <loc>https://kagodfrey.com/contact/</loc>
     <lastmod>2026-11-12</lastmod>
   </url>
+  <url>
+    <loc>https://kagodfrey.com/portrait-headshot-photography/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-woman-black-white-portrait.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-smiling-woman-hat-portrait.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-child-hands-black-white-portrait.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-seated-portrait-hat-chair.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kagodfrey.com/commercial-product-photography/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-acoustic-guitar-still-life.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-vintage-camera-detail.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-red-ornament-green-ribbon.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://kagodfrey.com/webp/keith-godfrey-golf-ball-tee-close-up.webp</image:loc>
+    </image:image>
+  </url>
 </urlset>
